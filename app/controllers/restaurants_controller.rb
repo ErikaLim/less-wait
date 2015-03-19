@@ -7,8 +7,8 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    res = Yelp.client.search('San Francisco', { term: params[:search] })
-    @business = res.businesses[0]
+    response = Yelp.client.search('San Francisco', { term: params[:search] })
+    @businesses = response.businesses
     render restaurant_path
   end
 end

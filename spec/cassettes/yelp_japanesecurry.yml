@@ -1,0 +1,384 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.yelp.com/v2/search?location=San%20Francisco&term=Japanese%20curry
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="80465d76f05f833504dfbe6dcf9f3e1b",
+        oauth_signature="eORxMH4VNztROgXtjuIGXkiOMRA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426798477", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Mar 2015 20:54:38 GMT
+      Server:
+      - Apache
+      X-Node:
+      - web1-uswest1bprod, api_com
+      Cache-Control:
+      - private
+      Set-Cookie:
+      - bse=11808b48a530fc882720ab1c15e7d225; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=G15QCgA-c1Ny0Z0ZwZf4ujBlUJl2PP-QhCZ873MSCHBjQp_W7f1hL_3dTDWkSDAyluqzUOeFaOLz8ulr8tjOnrce2qyVGziY;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Wed, 14-Mar-2035 20:54:38
+        GMT
+      Content-Length:
+      - '30670'
+      Vary:
+      - User-Agent
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Mode:
+      - ro
+      X-Proxied:
+      - extlb2-uswest1aprod
+    body:
+      encoding: UTF-8
+      string: '{"region": {"span": {"latitude_delta": 0.18159086000000002, "longitude_delta":
+        0.26297644999999648}, "center": {"latitude": 37.783827900000006, "longitude":
+        -122.37843195000001}}, "total": 1332, "businesses": [{"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/kare-ken-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 302, "name": "Kare-Ken", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/0UM96jGvigC9ggMrVD-5Fg/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/kare-ken-san-francisco", "phone": "4152925273",
+        "snippet_text": "Again, I''m not that douchebag that''s gonna tell you how
+        \"authentic\" this place is or isn''t. You realize the main point of those
+        people is to brag about how...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/2PQ3jN7a-Hc2pDD9V3MW0w/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-415-292-5273",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "kare-ken-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Ofarrell St \u0026 Geary St", "city": "San Francisco", "display_address":
+        ["552 Jones St", "Tenderloin", "San Francisco, CA 94102"], "geo_accuracy":
+        8.0, "neighborhoods": ["Tenderloin"], "postal_code": "94102", "country_code":
+        "US", "address": ["552 Jones St"], "coordinate": {"latitude": 37.786560100000003,
+        "longitude": -122.41294860000001}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/muraccis-japanese-curry-and-grill-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1141, "name": "Muracci''s Japanese Curry \u0026 Grill", "snippet_image_url":
+        "http://s3-media1.fl.yelpcdn.com/photo/ih-E-FWtr56QtDdqHIO8CA/ms.jpg", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/muraccis-japanese-curry-and-grill-san-francisco",
+        "menu_date_updated": 1387643608, "phone": "4157731101", "snippet_text": "Mmmm
+        curry. This place is really near my office so we sometimes end up here to
+        grab a quick lunch. This place basically sells super yummy Japanese curry!
+        I...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/vFnfkNhiw8bVIBHaaOzxzA/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-415-773-1101",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "muraccis-japanese-curry-and-grill-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Bush St \u0026 Pine St",
+        "city": "San Francisco", "display_address": ["307 Kearny St", "Financial District",
+        "San Francisco, CA 94108"], "geo_accuracy": 8.0, "neighborhoods": ["Financial
+        District", "Chinatown"], "postal_code": "94108", "country_code": "US", "address":
+        ["307 Kearny St"], "coordinate": {"latitude": 37.790922895073898, "longitude":
+        -122.404116466641}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0,
+        "mobile_url": "http://m.yelp.com/biz/volcano-san-francisco", "rating_img_url":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 651, "name": "Volcano", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/25D9wJpKILjutZ-39Vn3Pw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/volcano-san-francisco", "menu_date_updated":
+        1411769322, "phone": "4157527671", "snippet_text": "Fast, friendly service
+        and hot, crispy katsu-- the perfect lunch. I only wish that the curry had
+        a few more carrot pieces- or maybe other veggies- since I...", "image_url":
+        "http://s3-media2.fl.yelpcdn.com/bphoto/P0JlhehzG8zhWCvYbbzUfA/ms.jpg", "categories":
+        [["Japanese", "japanese"]], "display_phone": "+1-415-752-7671", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "volcano-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "18th Ave \u0026 19th Ave", "city": "San
+        Francisco", "display_address": ["5454 Geary Blvd", "Outer Richmond", "San
+        Francisco, CA 94121"], "geo_accuracy": 8.0, "neighborhoods": ["Outer Richmond"],
+        "postal_code": "94121", "country_code": "US", "address": ["5454 Geary Blvd"],
+        "coordinate": {"latitude": 37.780670200000003, "longitude": -122.4780197},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/kitchen-kura-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 357, "name": "Kitchen Kura", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/Ut8IBvwaVgqfGqsAm_uwpA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/kitchen-kura-san-francisco", "menu_date_updated":
+        1387610321, "phone": "4157312054", "snippet_text": "Wonderful little place
+        for authentic home-cooked food. It is very affordable - $13.50 for dinner
+        with 2 dish choices, appetizer, soup, salad, and rice. The...", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/uKrM0H8vk_9BDK_7C06HaQ/ms.jpg", "categories":
+        [["Japanese", "japanese"]], "display_phone": "+1-415-731-2054", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "kitchen-kura-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "17th Ave \u0026 16th Ave", "city": "San
+        Francisco", "display_address": ["1525 Irving St", "Inner Sunset", "San Francisco,
+        CA 94122"], "geo_accuracy": 9.5, "neighborhoods": ["Inner Sunset"], "postal_code":
+        "94122", "country_code": "US", "address": ["1525 Irving St"], "coordinate":
+        {"latitude": 37.763539630636799, "longitude": -122.47440576553301}, "state_code":
+        "CA"}}, {"is_claimed": false, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/tanis-kitchen-daly-city",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 929, "name": "Tani''s Kitchen", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/RcEII5keBGLPNKNqA9pVPA/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/tanis-kitchen-daly-city", "menu_date_updated":
+        1390478448, "phone": "6509921701", "snippet_text": "I really like the service
+        and the food was amazing thanks a lot \n\nI love the pork that they has its
+        so good you have to try it guys", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/iQaxfkXt9Kw-uKuVrplZog/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-650-992-1701",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "tanis-kitchen-daly-city", "is_closed":
+        false, "location": {"city": "Daly City", "display_address": ["32 Park Plz
+        Dr", "Daly City, CA 94015"], "geo_accuracy": 8.0, "postal_code": "94015",
+        "country_code": "US", "address": ["32 Park Plz Dr"], "coordinate": {"latitude":
+        37.701324499999998, "longitude": -122.4819794}, "state_code": "CA"}}, {"is_claimed":
+        false, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/on-the-bridge-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 776, "name": "On the Bridge", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/c0YT5GZE2o4EGoGl7k2E0g/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/on-the-bridge-san-francisco", "phone": "4159227765",
+        "snippet_text": "My go-to place for 20 years. Every time I go to Japantown,
+        I always end up eating here. Their pastas are very delicious. They have more
+        variations of pasta...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/tqibMAcu8-qZ-vXs7f3qaA/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-415-922-7765",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "on-the-bridge-san-francisco", "is_closed": false, "location": {"city":
+        "San Francisco", "display_address": ["Japan Center", "1581 Webster St, Ste
+        205", "Japantown", "San Francisco, CA 94115"], "geo_accuracy": 9.5, "neighborhoods":
+        ["Japantown", "Lower Pacific Heights"], "postal_code": "94115", "country_code":
+        "US", "address": ["Japan Center", "1581 Webster St, Ste 205"], "coordinate":
+        {"latitude": 37.785185519246198, "longitude": -122.431340884675}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/delica-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 837, "name": "Delica", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Fo8he7HL7as_zfwWo0NdCA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/delica-san-francisco", "menu_date_updated":
+        1387623173, "phone": "4158340344", "snippet_text": "Expensive, but delicious
+        authentic Japanese food : )\n\nI love their bento box and/or lunch combos.  \n\nTheir
+        shrimp cake and burdock salad are awesome.  YUM!...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/ZbOLUlAbZcbB7AQY5N1cJA/ms.jpg",
+        "categories": [["Japanese", "japanese"], ["Delis", "delis"], ["Sushi Bars",
+        "sushi"]], "display_phone": "+1-415-834-0344", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "delica-san-francisco", "is_closed":
+        false, "location": {"city": "San Francisco", "display_address": ["1 Ferry
+        Bldg", "Shop 45", "Embarcadero", "San Francisco, CA 94111"], "geo_accuracy":
+        9.5, "neighborhoods": ["Embarcadero", "SoMa", "South Beach"], "postal_code":
+        "94111", "country_code": "US", "address": ["1 Ferry Bldg", "Shop 45"], "coordinate":
+        {"latitude": 37.795406999999997, "longitude": -122.39321700000001}, "state_code":
+        "CA"}}, {"is_claimed": false, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/japacurry-truck-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 323, "name": "JapaCurry Truck", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/G69TvyvCKPxo5JiQm1jYZw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/japacurry-truck-san-francisco", "phone": "4152908857",
+        "snippet_text": "It''s unclear as to how i''ve yet to write this place a review.  I''m
+        a meat eater, and this place is heaven on Thursdays. \n\nYou can see em start
+        to set up...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/xeBqUJk22I2IDCUORlq5JQ/ms.jpg",
+        "categories": [["Japanese", "japanese"], ["Food Trucks", "foodtrucks"]], "display_phone":
+        "+1-415-290-8857", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "japacurry-truck-san-francisco", "is_closed": false, "location": {"city":
+        "San Francisco", "display_address": ["SoMa", "San Francisco, CA 94103"], "geo_accuracy":
+        5.0, "neighborhoods": ["SoMa"], "postal_code": "94103", "country_code": "US",
+        "address": [], "coordinate": {"latitude": 37.774470000000001, "longitude":
+        -122.41242}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url":
+        "http://m.yelp.com/biz/sushirrito-san-francisco-4", "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 623, "name": "Sushirrito", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/pBXMqtMF0LNTXmXxBil65Q/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/sushirrito-san-francisco-4", "menu_date_updated":
+        1412765120, "phone": "4155449868", "snippet_text": "Salmon Samba!  Small efficient
+        operation that pumps out burrito sized sushi rolls.  It was delish! Can''t
+        wait to try the geisha kiss.\n\nThey have raw and...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/Z3lmii87dYm3TszrekYiMw/ms.jpg",
+        "categories": [["Japanese", "japanese"], ["Sushi Bars", "sushi"], ["Asian
+        Fusion", "asianfusion"]], "display_phone": "+1-415-544-9868", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "sushirrito-san-francisco-4", "is_closed":
+        false, "location": {"cross_streets": "Hardie Pl \u0026 Sutter St", "city":
+        "San Francisco", "display_address": ["226 Kearny St", "Financial District",
+        "San Francisco, CA 94108"], "geo_accuracy": 9.5, "neighborhoods": ["Financial
+        District"], "postal_code": "94108", "country_code": "US", "address": ["226
+        Kearny St"], "coordinate": {"latitude": 37.790345000000002, "longitude": -122.40384400000001},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/skool-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 911, "name": "Skool", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/rGvMAdg88Ozxina_HAeOCA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/skool-san-francisco", "menu_date_updated":
+        1415751215, "phone": "4152558800", "snippet_text": "Skool is definitely a
+        place to be for date nights!!! The ambience is lovely and romantic. We made
+        a reservation 30 mins before they opened on a Saturday and...", "image_url":
+        "http://s3-media2.fl.yelpcdn.com/bphoto/47i057bRXAm_sIvA2obD5A/ms.jpg", "categories":
+        [["Seafood", "seafood"], ["Japanese", "japanese"], ["Asian Fusion", "asianfusion"]],
+        "display_phone": "+1-415-255-8800", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "skool-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Rhode Island St", "city": "San Francisco",
+        "display_address": ["1725 Alameda St", "SoMa", "San Francisco, CA 94103"],
+        "geo_accuracy": 9.5, "neighborhoods": ["SoMa"], "postal_code": "94103", "country_code":
+        "US", "address": ["1725 Alameda St"], "coordinate": {"latitude": 37.768509696703603,
+        "longitude": -122.402136325836}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/miki-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 326, "name": "Miki Restaurant", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/px3pFxpczO34LuXYOoWwrA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/miki-restaurant-san-francisco", "phone": "4153870874",
+        "snippet_text": "Wow. Never would''ve thought I''d find my favorite ramen
+        spot in SF right in the Outer Richmond. I''m seriously impressed by Miki''s
+        ramen even though they are...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/qkkKdaLKGmeZn7LvA-S7sg/ms.jpg",
+        "categories": [["Ramen", "ramen"]], "display_phone": "+1-415-387-0874", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "miki-restaurant-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "38th Ave \u0026 37th Ave", "city": "San Francisco", "display_address": ["3639
+        Balboa St", "Outer Richmond", "San Francisco, CA 94121"], "geo_accuracy":
+        8.0, "neighborhoods": ["Outer Richmond"], "postal_code": "94121", "country_code":
+        "US", "address": ["3639 Balboa St"], "coordinate": {"latitude": 37.7754707,
+        "longitude": -122.4979477}, "state_code": "CA"}}, {"is_claimed": true, "rating":
+        3.5, "mobile_url": "http://m.yelp.com/biz/ken-ken-ramen-san-francisco-2",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 461, "name": "Ken Ken Ramen", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/6NsMMM8AHN4NMR4cap9T-Q/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/ken-ken-ramen-san-francisco-2", "menu_date_updated":
+        1401163788, "phone": "4159672636", "snippet_text": "Ken Ken is my go-to for
+        ramen in the Mission.\n\nPros: You can''t beat the slow-cooked egg. The portions
+        are generous, the staff is friendly. The ingredients...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/1Ls33cyhWUr5eKirYsZH4g/ms.jpg",
+        "categories": [["Ramen", "ramen"]], "display_phone": "+1-415-967-2636", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "ken-ken-ramen-san-francisco-2",
+        "is_closed": false, "location": {"cross_streets": "Capp St \u0026 Mission
+        St", "city": "San Francisco", "display_address": ["3378 18th St", "Mission",
+        "San Francisco, CA 94110"], "geo_accuracy": 8.0, "neighborhoods": ["Mission"],
+        "postal_code": "94110", "country_code": "US", "address": ["3378 18th St"],
+        "coordinate": {"latitude": 37.762047000000003, "longitude": -122.418854},
+        "state_code": "CA"}}, {"is_claimed": false, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/dojima-ann-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 453, "name": "Dojima-Ann", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/JYn--EkPLVYh9zql8I1VZA/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/dojima-ann-san-francisco", "menu_date_updated":
+        1416485612, "phone": "4159560838", "snippet_text": "The Doj is a great place
+        for Union Square food!\n\nTheir sashimi appetizers are usually buttery and
+        mouth watering.  \n\nThe staple for me is their lunch bentos...", "image_url":
+        "http://s3-media1.fl.yelpcdn.com/bphoto/y4q6ItqFKzRY-EiXcoCu4g/ms.jpg", "categories":
+        [["Japanese", "japanese"]], "display_phone": "+1-415-956-0838", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "dojima-ann-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Cyril Magnin St \u0026 Powell St", "city":
+        "San Francisco", "display_address": ["219 O''Farrell St", "Union Square",
+        "San Francisco, CA 94102"], "geo_accuracy": 8.0, "neighborhoods": ["Union
+        Square"], "postal_code": "94102", "country_code": "US", "address": ["219 O''Farrell
+        St"], "coordinate": {"latitude": 37.786251100000001, "longitude": -122.40834049999999},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/cha-ya-san-francisco-4",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 904, "name": "Cha-Ya", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/N68LKrn0kwP9V8-fi1CNNg/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/cha-ya-san-francisco-4", "menu_date_updated":
+        1390489992, "phone": "4152527825", "snippet_text": "I am obsessed with this
+        spot. It''s some of the best Japanese food I''ve had in the city (and I''ve
+        eaten _a lot_ of Japanese food in the city). I was even...", "image_url":
+        "http://s3-media2.fl.yelpcdn.com/bphoto/oEMT3QgiSf7rqbe01Ez0AA/ms.jpg", "categories":
+        [["Japanese", "japanese"], ["Vegetarian", "vegetarian"], ["Vegan", "vegan"]],
+        "display_phone": "+1-415-252-7825", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "cha-ya-san-francisco-4", "is_closed":
+        false, "location": {"cross_streets": "19th St \u0026 18th St", "city": "San
+        Francisco", "display_address": ["762 Valencia St", "Mission", "San Francisco,
+        CA 94110"], "geo_accuracy": 9.5, "neighborhoods": ["Mission"], "postal_code":
+        "94110", "country_code": "US", "address": ["762 Valencia St"], "coordinate":
+        {"latitude": 37.760753000000001, "longitude": -122.42178699999999}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/hrd-coffee-shop-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 1480, "name": "HRD Coffee Shop", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/6UETuwazfunUojYS_1FOjQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/hrd-coffee-shop-san-francisco", "menu_date_updated":
+        1418892208, "phone": "4155432355", "snippet_text": "So glad they will finally
+        be open during baseball season!!! (Until 8:30pm)\n\nWe had the French fries
+        (so fresh a good with their dipping sauce) \nMongolian...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/9eAc29FyN6SPUNzXLQhs5Q/ms.jpg",
+        "categories": [["Asian Fusion", "asianfusion"]], "display_phone": "+1-415-543-2355",
+        "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "hrd-coffee-shop-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Taber Aly \u0026 Park Ave",
+        "city": "San Francisco", "display_address": ["521A 3rd St", "SoMa", "San Francisco,
+        CA 94107"], "geo_accuracy": 9.5, "neighborhoods": ["SoMa"], "postal_code":
+        "94107", "country_code": "US", "address": ["521A 3rd St"], "coordinate": {"latitude":
+        37.781201899999999, "longitude": -122.3952255}, "state_code": "CA"}}, {"is_claimed":
+        true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/kaiju-eats-ramen-and-izakaya-san-francisco-3",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 198, "name": "Kaiju Eats Ramen and Izakaya", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/n0wrItUnJaBvQdLY3Zr1fw/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/kaiju-eats-ramen-and-izakaya-san-francisco-3",
+        "phone": "4157424309", "snippet_text": "It''s all about that bass and BROTH!\n\nNot
+        sure why the reviews are so low for this place but I happen to love their
+        ramen! Trust me, I''ve tried plenty other...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/UzG7haPnJSZUzodpRcpXTg/ms.jpg",
+        "categories": [["Asian Fusion", "asianfusion"], ["Sushi Bars", "sushi"], ["Ramen",
+        "ramen"]], "display_phone": "+1-415-742-4309", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "kaiju-eats-ramen-and-izakaya-san-francisco-3", "is_closed": false,
+        "location": {"cross_streets": "Commonwealth Ave \u0026 Stanyan St", "city":
+        "San Francisco", "display_address": ["3409 Geary Blvd", "Laurel Heights",
+        "San Francisco, CA 94118"], "geo_accuracy": 9.5, "neighborhoods": ["Laurel
+        Heights", "Inner Richmond"], "postal_code": "94118", "country_code": "US",
+        "address": ["3409 Geary Blvd"], "coordinate": {"latitude": 37.781106000000001,
+        "longitude": -122.455533}, "state_code": "CA"}}, {"is_claimed": true, "rating":
+        3.5, "mobile_url": "http://m.yelp.com/biz/katana-ya-san-francisco", "rating_img_url":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 3236, "name": "Katana-Ya", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/P0pCS5BKBTnWngq0ljB86w/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/katana-ya-san-francisco", "phone": "4157711280",
+        "snippet_text": "Oh man, ramen craving overly satisfied!!!! I loved the katana-ya
+        special ramen with extra pork in place of potstickers. The karaage in it was
+        amazeballs! It...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/lLbsQN5Abl9c39WKnZfjVw/ms.jpg",
+        "categories": [["Japanese", "japanese"], ["Sushi Bars", "sushi"]], "display_phone":
+        "+1-415-771-1280", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "katana-ya-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Mason St", "city": "San Francisco", "display_address": ["430 Geary St", "Union
+        Square", "San Francisco, CA 94102"], "geo_accuracy": 8.0, "neighborhoods":
+        ["Union Square", "Lower Nob Hill"], "postal_code": "94102", "country_code":
+        "US", "address": ["430 Geary St"], "coordinate": {"latitude": 37.787258100000003,
+        "longitude": -122.41036990000001}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/udon-mugizo-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 140, "name": "Udon Mugizo", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/6g3Q4jtEoWLe0ONdDN0saQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/udon-mugizo-san-francisco", "phone": "4159313118",
+        "snippet_text": "You best believe I''ll order the uni pasta if it''s on the
+        menu! \n\nBeware: Uni is not for everyone. \n\nIt''s nice to have more recognition
+        for udon rather than...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/CllmMDYVmXGtzLF4lr6b_w/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-415-931-3118",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "udon-mugizo-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Post St \u0026 Geary Blvd", "city": "San Francisco", "display_address": ["1581
+        Webster St", "Ste 217", "Japantown", "San Francisco, CA 94115"], "geo_accuracy":
+        8.0, "neighborhoods": ["Japantown", "Lower Pacific Heights"], "postal_code":
+        "94115", "country_code": "US", "address": ["1581 Webster St", "Ste 217"],
+        "coordinate": {"latitude": 37.785232499999999, "longitude": -122.43157960000001},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/muraccis-berkeley-berkeley",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 59, "name": "Muracci''s Berkeley", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/2Dxc9dH31i0XjtShcWoOxA/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/muraccis-berkeley-berkeley", "phone": "5108451101",
+        "snippet_text": "Was walking down Telegraph trying to find this one cafe to
+        have lunch but came across this little place and suddenly had a craving for
+        Japanese curry...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/gFQaunNfpRGd34tI-MrFpg/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-510-845-1101",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "muraccis-berkeley-berkeley", "is_closed": false, "location": {"cross_streets":
+        "Channing Way \u0026 Haste St", "city": "Berkeley", "display_address": ["2428
+        Telegraph Ave", "Telegraph Ave", "Berkeley, CA 94704"], "geo_accuracy": 8.0,
+        "neighborhoods": ["Telegraph Ave"], "postal_code": "94704", "country_code":
+        "US", "address": ["2428 Telegraph Ave"], "coordinate": {"latitude": 37.8663788,
+        "longitude": -122.2589035}, "state_code": "CA"}}, {"is_claimed": false, "rating":
+        4.0, "mobile_url": "http://m.yelp.com/biz/hisago-san-francisco", "rating_img_url":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 114, "name": "Hisago", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/OjKxLOUhaIhJKVG94F8D-g/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/hisago-san-francisco", "phone": "4153799569",
+        "snippet_text": "I was looking to get my boyfriend a to go lunch because I
+        ate all of the dumplings at dim sum earlier.  \n\nThis place is easy to miss...the
+        sign is not so...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/0nCi3rxFl8EOcH0p4RxB0Q/ms.jpg",
+        "categories": [["Japanese", "japanese"]], "display_phone": "+1-415-379-9569",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "hisago-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Spruce St \u0026 Parker Ave", "city": "San Francisco", "display_address":
+        ["3226 Geary Blvd", "Laurel Heights", "San Francisco, CA 94118"], "geo_accuracy":
+        9.5, "neighborhoods": ["Laurel Heights"], "postal_code": "94118", "country_code":
+        "US", "address": ["3226 Geary Blvd"], "coordinate": {"latitude": 37.781959000000001,
+        "longitude": -122.45376899999999}, "state_code": "CA"}}]}'
+    http_version: 
+  recorded_at: Thu, 19 Mar 2015 20:54:38 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,389 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.yelp.com/v2/search?location=San%20Francisco&term=San%20Tung%20Chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="fa39bc054df6a37c6882d9c1cf819f4f",
+        oauth_signature="bw2H%2F%2Bk0zq04PIezXuNifLPS1PI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426798477", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Mar 2015 20:54:38 GMT
+      Server:
+      - Apache
+      X-Node:
+      - web19-uswest1aprod, api_com
+      Cache-Control:
+      - private
+      Set-Cookie:
+      - bse=19335b91b18005b866b2793dfbf1232a; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=PXsdh5pUAIJUzFTS1aTv1xfZyjrV2zwf6SXjznp664TT8A8fW0my78mjeQOU32-NKBQMDI7ipZ6tscxmsFkvcCsiLbr9HS6R;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Wed, 14-Mar-2035 20:54:38
+        GMT
+      Content-Length:
+      - '31298'
+      Vary:
+      - User-Agent
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Mode:
+      - ro
+      X-Proxied:
+      - extlb1-uswest1aprod
+    body:
+      encoding: UTF-8
+      string: '{"region": {"span": {"latitude_delta": 0.055419430000000602, "longitude_delta":
+        0.10295241000000033}, "center": {"latitude": 37.771941650000002, "longitude":
+        -122.45124455}}, "total": 220, "businesses": [{"is_claimed": false, "rating":
+        4.0, "mobile_url": "http://m.yelp.com/biz/san-tung-chinese-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 4392, "name": "San Tung Chinese Restaurant", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/Fk9KwCxTpqkPiserAaZXjw/ms.jpg", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/san-tung-chinese-restaurant-san-francisco",
+        "menu_date_updated": 1390471628, "phone": "4152420828", "snippet_text": "Very
+        Delicious Food. Very YUMMY!!! \nGreat Service!!!\nGreat Food!!!\nGreat Atmosphere!!!",
+        "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/Wf9OwDKum0j-kHwYpY5AoA/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-242-0828",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "san-tung-chinese-restaurant-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "12th Ave \u0026 11th Ave",
+        "city": "San Francisco", "display_address": ["1031 Irving St", "Inner Sunset",
+        "San Francisco, CA 94122"], "geo_accuracy": 8.0, "neighborhoods": ["Inner
+        Sunset"], "postal_code": "94122", "country_code": "US", "address": ["1031
+        Irving St"], "coordinate": {"latitude": 37.763671899999999, "longitude": -122.4689636},
+        "state_code": "CA"}}, {"is_claimed": false, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/san-tung-2-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 114, "name": "San Tung #2", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/TQrczhqqMJd5yOitI_Iixw/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/san-tung-2-san-francisco", "phone": "4152420828",
+        "snippet_text": "My friends and I are documenting the differences between
+        San Tung and San Tung #2 as we are eating their delicious diced and whole
+        chicken wings.\n\nSan Tung...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/_7JC__cCNRdtlmEKAER1Mw/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-242-0828",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "san-tung-2-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "12th Ave \u0026 11th Ave", "city": "San Francisco", "display_address": ["1033
+        Irving St", "Inner Sunset", "San Francisco, CA 94122"], "geo_accuracy": 9.5,
+        "neighborhoods": ["Inner Sunset"], "postal_code": "94122", "country_code":
+        "US", "address": ["1033 Irving St"], "coordinate": {"latitude": 37.763813163158702,
+        "longitude": -122.46888928771099}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/so-san-francisco-4", "rating_img_url":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1269, "name": "SO", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/mMiOgwKwwKkNRlgjThLGIw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/so-san-francisco-4", "menu_date_updated":
+        1387683374, "phone": "4155527676", "snippet_text": "People who don''t like
+        this place must hate their lives. I''ve never been disappointed with a meal
+        here.\n\nIt''s phenomenal. Authentic with a twist.", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/9Gy49lrUKf0786zeirCbqg/ms.jpg",
+        "categories": [["Asian Fusion", "asianfusion"], ["Chinese", "chinese"]], "display_phone":
+        "+1-415-552-7676", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "so-san-francisco-4", "is_closed":
+        false, "location": {"cross_streets": "Converse St \u0026 8th St", "city":
+        "San Francisco", "display_address": ["1010 Bryant St", "SoMa", "San Francisco,
+        CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"], "postal_code":
+        "94103", "country_code": "US", "address": ["1010 Bryant St"], "coordinate":
+        {"latitude": 37.772410999999998, "longitude": -122.407501}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/san-wang-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 299, "name": "San Wang Restaurant", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/rx_8X__TqrL6fWVDJDnQ4w/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/san-wang-restaurant-san-francisco", "menu_date_updated":
+        1387616673, "phone": "4159211453", "snippet_text": "I am amazed at the poor
+        reviews this restaurant gets.\n\nThis has been my family''s favorite restaurant
+        for Sunday dinners for years. There are many specialty...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/EKsYegTP2odvqNrmqWMERw/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-921-1453",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "san-wang-restaurant-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Laguna St \u0026 Buchanan
+        St", "city": "San Francisco", "display_address": ["1682 Post St", "Japantown",
+        "San Francisco, CA 94115"], "geo_accuracy": 8.0, "neighborhoods": ["Japantown",
+        "Lower Pacific Heights"], "postal_code": "94115", "country_code": "US", "address":
+        ["1682 Post St"], "coordinate": {"latitude": 37.785781900000003, "longitude":
+        -122.42923740000001}, "state_code": "CA"}}, {"is_claimed": true, "rating":
+        3.5, "mobile_url": "http://m.yelp.com/biz/nan-king-road-bistro-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 457, "name": "Nan King Road Bistro", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/bCaOMIfLI5Tzr_bRkdpRyg/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/nan-king-road-bistro-san-francisco", "menu_date_updated":
+        1402627272, "phone": "4157532900", "snippet_text": "I give this place 5 stars
+        for their food quality and service. \n\nWe decided to venture off to the city
+        on Valentine''s Day with no plans, no reservations....", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/ZDuNoIrZxzb7hIidRPJivw/ms.jpg",
+        "categories": [["Chinese", "chinese"], ["Asian Fusion", "asianfusion"], ["Thai",
+        "thai"]], "display_phone": "+1-415-753-2900", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "eat24", "id": "nan-king-road-bistro-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Irving St \u0026 Judah St", "city":
+        "San Francisco", "display_address": ["1360 9th Ave", "Inner Sunset", "San
+        Francisco, CA 94122"], "geo_accuracy": 8.0, "neighborhoods": ["Inner Sunset"],
+        "postal_code": "94122", "country_code": "US", "address": ["1360 9th Ave"],
+        "coordinate": {"latitude": 37.762915999999997, "longitude": -122.46590399999999},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/capital-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 447, "name": "Capital Restaurant", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/BB4lEq7RbUoQ6OO3UpEkFQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/capital-restaurant-san-francisco", "menu_date_updated":
+        1387491804, "phone": "4153976269", "snippet_text": "We visited here after
+        the Chinese New Year parade, needless to say it was absolutely crammed packed,
+        but I''ve never had a problem with sharing a big table...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/zuEo6xVq9eMrOmtnMFwwwA/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-397-6269",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "capital-restaurant-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Spofford St \u0026 Waverly
+        Pl", "city": "San Francisco", "display_address": ["839 Clay St", "Chinatown",
+        "San Francisco, CA 94108"], "geo_accuracy": 8.0, "neighborhoods": ["Chinatown"],
+        "postal_code": "94108", "country_code": "US", "address": ["839 Clay St"],
+        "coordinate": {"latitude": 37.793993999999998, "longitude": -122.407066},
+        "state_code": "CA"}}, {"is_claimed": false, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/shanghai-house-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 446, "name": "Shanghai House", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/uE9efHJHs_il_uq_8hoXDA/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/shanghai-house-san-francisco", "menu_date_updated":
+        1387630534, "phone": "4158319288", "snippet_text": "if dumpling empire in
+        ssf and shanghai house had a baby it would be the best looking chinese carb
+        baby EVER.  \n\nshanghai house on the other hand is SO good...", "image_url":
+        "http://s3-media1.fl.yelpcdn.com/bphoto/07qxsuudQ9ys64Lk1OnP7g/ms.jpg", "categories":
+        [["Shanghainese", "shanghainese"]], "display_phone": "+1-415-831-9288", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "shanghai-house-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "37th Ave \u0026 38th Ave",
+        "city": "San Francisco", "display_address": ["3641 Balboa St", "Outer Richmond",
+        "San Francisco, CA 94121"], "geo_accuracy": 8.0, "neighborhoods": ["Outer
+        Richmond"], "postal_code": "94121", "country_code": "US", "address": ["3641
+        Balboa St"], "coordinate": {"latitude": 37.7754707, "longitude": -122.4979477},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/mission-chinese-food-san-francisco-4",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 1663, "name": "Mission Chinese Food", "snippet_image_url":
+        "http://s3-media1.fl.yelpcdn.com/photo/dUdi1T51rPehNGWpdSDL0Q/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/mission-chinese-food-san-francisco-4", "menu_date_updated":
+        1423185794, "phone": "4158632800", "snippet_text": "Mission Chinese has been
+        on our \"must go\" list for years, but for whatever reason, we haven''t been!  We
+        finally visited a few weeks ago, and it was amazing!...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/zPQSUmXQRHTAENDjHUbx4g/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-863-2800",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "eat24", "id": "mission-chinese-food-san-francisco-4", "is_closed":
+        false, "location": {"city": "San Francisco", "display_address": ["Lung Shan
+        Restaurant", "2234 Mission St", "Mission", "San Francisco, CA 94110"], "geo_accuracy":
+        9.5, "neighborhoods": ["Mission"], "postal_code": "94110", "country_code":
+        "US", "address": ["Lung Shan Restaurant", "2234 Mission St"], "coordinate":
+        {"latitude": 37.760969653193598, "longitude": -122.419323921204}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/dong-bei-mama-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 150, "name": "Dong Bei Mama", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/G69TvyvCKPxo5JiQm1jYZw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/dong-bei-mama-san-francisco", "phone": "4152214278",
+        "snippet_text": "Pretty good mix of authentic Chinese dishes and american
+        styled Chinese dishes. I''ve had the chance to try out a few of beef and lamb
+        sizzling plates, and...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/vzPL2dLrNduSquWsRw2kgA/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-221-4278",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "dong-bei-mama-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "11th Ave \u0026 12th Ave", "city": "San Francisco", "display_address": ["4737
+        Geary Blvd", "Inner Richmond", "San Francisco, CA 94118"], "geo_accuracy":
+        9.5, "neighborhoods": ["Inner Richmond"], "postal_code": "94118", "country_code":
+        "US", "address": ["4737 Geary Blvd"], "coordinate": {"latitude": 37.780436999999999,
+        "longitude": -122.47031699999999}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/taiwan-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 336, "name": "Taiwan Restaurant", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/dThscMsq2nQFG9hVOxTcZQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/taiwan-restaurant-san-francisco", "menu_date_updated":
+        1426628898, "phone": "4153871789", "snippet_text": "Came across this place
+        for the first time and man, I wish it was closer to my regular haunts!  The
+        Sizzling Beef hot plate was served with crisp bell...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/NQo-09dVVgK7aOGlarCkOQ/ms.jpg",
+        "categories": [["Taiwanese", "taiwanese"], ["Chinese", "chinese"]], "display_phone":
+        "+1-415-387-1789", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "eat24", "id": "taiwan-restaurant-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "6th Ave \u0026 5th Ave", "city": "San
+        Francisco", "display_address": ["445 Clement St", "Inner Richmond", "San Francisco,
+        CA 94118"], "geo_accuracy": 8.0, "neighborhoods": ["Inner Richmond"], "postal_code":
+        "94118", "country_code": "US", "address": ["445 Clement St"], "coordinate":
+        {"latitude": 37.782921865582502, "longitude": -122.463965937495}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/jai-yun-san-francisco-2",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 108, "name": "Jai Yun", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/OzCDEA4PIqV1rji9y-OB4g/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/jai-yun-san-francisco-2", "menu_date_updated":
+        1419658842, "phone": "4159817438", "snippet_text": "Best home cooked chinese
+        you will have outside someone''s home!\nThe all prix fixe menu takes the pressure
+        off diners who want an authentic chinese experience...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/zGmJSe3etD8h0gAuwCL0GQ/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-981-7438",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "jai-yun-san-francisco-2", "is_closed":
+        false, "location": {"cross_streets": "Kearny St \u0026 Montgomery St", "city":
+        "San Francisco", "display_address": ["680 Clay St", "Financial District",
+        "San Francisco, CA 94111"], "geo_accuracy": 8.0, "neighborhoods": ["Financial
+        District"], "postal_code": "94111", "country_code": "US", "address": ["680
+        Clay St"], "coordinate": {"latitude": 37.794526442885399, "longitude": -122.40456841885999},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/melisas-chinese-cuisine-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 207, "name": "Melisa''s Chinese Cuisine", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/NhG4HyMNilxhLjuHGC5MIw/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/melisas-chinese-cuisine-san-francisco", "menu_date_updated":
+        1387610077, "phone": "4153871680", "snippet_text": "My favorite Chinese in
+        SF!\n\nFavs: Sesame Chicken\nMongolian Beef\nHoney Walnut Prawns\n\nSuper
+        fresh veggies. NO MSG.  Quick Delivery. Friendly staff.  Love...", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/zQbx9TvpB6TIAoUoCe1STQ/ms.jpg", "categories":
+        [["Chinese", "chinese"]], "display_phone": "+1-415-387-1680", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "melisas-chinese-cuisine-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "5th Ave \u0026 6th Ave",
+        "city": "San Francisco", "display_address": ["450 Balboa St", "Inner Richmond",
+        "San Francisco, CA 94118"], "geo_accuracy": 8.0, "neighborhoods": ["Inner
+        Richmond"], "postal_code": "94118", "country_code": "US", "address": ["450
+        Balboa St"], "coordinate": {"latitude": 37.777458000000003, "longitude": -122.46373699999999},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/tenglong-chinese-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 135, "name": "Tenglong Chinese Restaurant", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/nHYa_xmVDuAGABtX2-2EmQ/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/tenglong-chinese-restaurant-san-francisco",
+        "menu_date_updated": 1409094654, "phone": "4156663515", "snippet_text": "Wings.
+        Get them.\n\nOne of the friendliest restaurants I''ve been to on Clement.
+        On a somewhat cold, foggy Richmond night I ordered take out and was waiting
+        in...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/iY-7Akcp65YQjg1OM-Futw/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-666-3515",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "eat24", "id": "tenglong-chinese-restaurant-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "4th Ave \u0026 3rd Ave",
+        "city": "San Francisco", "display_address": ["208 Clement St", "Inner Richmond",
+        "San Francisco, CA 94118"], "geo_accuracy": 9.5, "neighborhoods": ["Inner
+        Richmond"], "postal_code": "94118", "country_code": "US", "address": ["208
+        Clement St"], "coordinate": {"latitude": 37.783408999999999, "longitude":
+        -122.461522}, "state_code": "CA"}}, {"is_claimed": false, "rating": 3.5, "mobile_url":
+        "http://m.yelp.com/biz/erics-restaurant-san-francisco", "rating_img_url":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 579, "name": "Eric''s Restaurant", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Ct8pG0lg8h-w5qriJTonhA/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/erics-restaurant-san-francisco", "menu_date_updated":
+        1387617147, "phone": "4152820919", "snippet_text": "I go to Eric''s whenever
+        I''m too lazy to cook dinner which is about once a week or so.  I love this
+        place and have been going there for such a long time....", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/aCJEEvcSs0vdYviOuRrjlw/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-282-0919",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "erics-restaurant-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Comerford St \u0026 27th
+        St", "city": "San Francisco", "display_address": ["1500 Church St", "Noe Valley",
+        "San Francisco, CA 94131"], "geo_accuracy": 8.0, "neighborhoods": ["Noe Valley"],
+        "postal_code": "94131", "country_code": "US", "address": ["1500 Church St"],
+        "coordinate": {"latitude": 37.746749999999999, "longitude": -122.427246},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/tsing-tao-chinese-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 215, "name": "Tsing Tao Chinese", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/bGyaBRXUJ_6_2eDafDTojg/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/tsing-tao-chinese-san-francisco", "menu_date_updated":
+        1402566914, "phone": "4153872344", "snippet_text": "Oh, boy. This place is
+        SO good.\n\nThe best part is, I''ve never actually eaten onsite. But I''ve
+        had the delivery from there more times than I''d like to admit....", "image_url":
+        "http://s3-media2.fl.yelpcdn.com/bphoto/7PgVifhGbH9kAQaGQcRecA/ms.jpg", "categories":
+        [["Chinese", "chinese"]], "display_phone": "+1-415-387-2344", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "eat24", "id": "tsing-tao-chinese-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "32nd Ave", "city": "San Francisco",
+        "display_address": ["3107 Clement St", "Outer Richmond", "San Francisco, CA
+        94121"], "geo_accuracy": 9.5, "neighborhoods": ["Outer Richmond"], "postal_code":
+        "94121", "country_code": "US", "address": ["3107 Clement St"], "coordinate":
+        {"latitude": 37.781925999999999, "longitude": -122.49245500000001}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/house-of-nanking-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 2219, "name": "House of Nanking", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/3yWX5i0VDtDc0k_wqFfbyg/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/house-of-nanking-san-francisco", "menu_date_updated":
+        1387619369, "phone": "4154211429", "snippet_text": "I have been going here
+        for years and most recently a couple weeks ago to meet a big group of friends.  The
+        popularity has certainly died down here since...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/DK_FwahsrFAUS-0vyNf11g/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-421-1429",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "house-of-nanking-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Jackson St \u0026 Columbus
+        Ave", "city": "San Francisco", "display_address": ["919 Kearny St", "Chinatown",
+        "San Francisco, CA 94133"], "geo_accuracy": 9.5, "neighborhoods": ["Chinatown"],
+        "postal_code": "94133", "country_code": "US", "address": ["919 Kearny St"],
+        "coordinate": {"latitude": 37.796529999999997, "longitude": -122.405422},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/brandy-hos-san-francisco-2",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 381, "name": "Brandy Ho''s", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Ji7iQiVaZ1aQhCoPUOI0Sw/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        "url": "http://www.yelp.com/biz/brandy-hos-san-francisco-2", "menu_date_updated":
+        1421931279, "phone": "4157887527", "snippet_text": "We came on Christmas Day!
+        What daredevils! We made an online reservation but still wound up waiting
+        about 15 minutes passed that time slot before we got a...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/b46QX6Nbw6Tqe1qMWGd7sg/ms.jpg",
+        "categories": [["Chinese", "chinese"], ["Asian Fusion", "asianfusion"]], "display_phone":
+        "+1-415-788-7527", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "brandy-hos-san-francisco-2", "is_closed":
+        false, "location": {"cross_streets": "Jack Kerouac Aly \u0026 Saroyan Pl",
+        "city": "San Francisco", "display_address": ["217 Columbus Ave", "Chinatown",
+        "San Francisco, CA 94133"], "geo_accuracy": 8.0, "neighborhoods": ["Chinatown"],
+        "postal_code": "94133", "country_code": "US", "address": ["217 Columbus Ave"],
+        "coordinate": {"latitude": 37.797195000000002, "longitude": -122.40612}, "state_code":
+        "CA"}}, {"is_claimed": false, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/heung-yuen-restaurant-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 153, "name": "Heung Yuen Restaurant", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/CTbXK8Hk1-BkXHrpmQ_6xg/ms.jpg", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/heung-yuen-restaurant-san-francisco", "phone":
+        "4156482666", "snippet_text": "THE BEST OF THE BEST \nI loveeeeeeeeeeeeeeeee
+        this place :)\nMy fav dish: Korean chicken (Obviously), and Chow Mein !!\nKorean
+        Chicken is MUST ! \n+ They...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/up6rsxI03cM1SIpiPh0cbA/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-648-2666",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "heung-yuen-restaurant-san-francisco", "is_closed": false, "location":
+        {"cross_streets": "Bartlett St \u0026 Valencia St", "city": "San Francisco",
+        "display_address": ["3279 22nd St", "Mission", "San Francisco, CA 94110"],
+        "geo_accuracy": 8.0, "neighborhoods": ["Mission"], "postal_code": "94110",
+        "country_code": "US", "address": ["3279 22nd St"], "coordinate": {"latitude":
+        37.755291759967797, "longitude": -122.420470565557}, "state_code": "CA"}},
+        {"is_claimed": false, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/changs-kitchen-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 61, "name": "Chang''s Kitchen", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/XSQNGHS_wIX2yT2LZcYBcg/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/changs-kitchen-san-francisco", "menu_date_updated":
+        1404322628, "phone": "4157318110", "snippet_text": "Crazy to see how inconsistent
+        reviews are for this place, but it might mean that they do certain things
+        well and others terribly.  \n\nI''ve ordered Chang''s...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/XgHW7XlEpKH7NHvc-jxf3Q/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-731-8110",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "changs-kitchen-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "12th Ave \u0026 11th Ave",
+        "city": "San Francisco", "display_address": ["1030 Irving St", "Inner Sunset",
+        "San Francisco, CA 94122"], "geo_accuracy": 8.0, "neighborhoods": ["Inner
+        Sunset"], "postal_code": "94122", "country_code": "US", "address": ["1030
+        Irving St"], "coordinate": {"latitude": 37.764167999999998, "longitude": -122.469048},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/wok-shop-cafe-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 366, "name": "Wok Shop Cafe", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/pBhScNdQR0wm_v7lZeB1jQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/wok-shop-cafe-san-francisco", "menu_date_updated":
+        1387602634, "phone": "4157712142", "snippet_text": "Salt and pepper chicken
+        wings. I dream about these. So deliciously crispy and just the right amount
+        of salt and spice. I order other stuff too, but mostly...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/61ikaOAA-5kiztJAM7b_wQ/ms.jpg",
+        "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-771-2142",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "wok-shop-cafe-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Franklin St \u0026 United States Highway
+        101", "city": "San Francisco", "display_address": ["1307 Sutter St", "Lower
+        Pacific Heights", "San Francisco, CA 94109"], "geo_accuracy": 8.0, "neighborhoods":
+        ["Lower Pacific Heights"], "postal_code": "94109", "country_code": "US", "address":
+        ["1307 Sutter St"], "coordinate": {"latitude": 37.787456810474403, "longitude":
+        -122.42207787931}, "state_code": "CA"}}]}'
+    http_version: 
+  recorded_at: Thu, 19 Mar 2015 20:54:37 GMT
+recorded_with: VCR 2.9.3

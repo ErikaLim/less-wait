@@ -42,6 +42,8 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'binding_of_caller'
   gem 'jasmine'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass', branch: 'v1.0beta'

@@ -1,5 +1,52 @@
 <br>
-<%= @business.name %>
+
 <br>
 <%= link_to "HOME", root_path %>
 <br>
+
+
+
+<table>
+  <thead>
+    <th>
+      Name
+    </th>
+    <th>
+      Tags
+    </th>
+    <th>
+      Reviews
+    </th>
+    <th>
+      Rating
+    </th>
+    <th>
+      Address
+    </th>
+  </thead>
+  <tbody>
+  <% @businesses.each do |business| %>
+    <tr>
+      <td>
+        <%= business.name %>
+      </td>
+      <td>
+        <% business.categories.each do |cat_capital, cat_downcase| %>
+          <%= cat_capital %>
+        <% end %>
+
+      </td>
+      <td>
+        <%= business.review_count %> reviews
+      </td>
+      <td>
+        <img src=" <%= business.rating_img_url %> " alt="<%= business.rating %> Stars" />
+      </td>
+      <td>
+        <% address = business.location.display_address %>
+        <%= address.first %>, <%= address.last %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
