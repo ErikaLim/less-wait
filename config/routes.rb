@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :restaurants
+  # resources :restaurants
 
   root 'restaurants#splash'
   post 'restaurants/search_yelp' => 'restaurants#search_yelp', as: :search_yelp
-  
+  get 'restaurants/show' => 'restaurants#show', as: :restaurant
+
   # The priority is based upon or der of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
