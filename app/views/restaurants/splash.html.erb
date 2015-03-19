@@ -1,0 +1,9 @@
+<h1>Restaurants#splash</h1>
+<p>Find me in app/views/restaurants/splash.html.erb</p>
+<%= form_for search_yelp_path, url: {action: "search_yelp"}, method: "post" do |f| %>
+  <%= f.label :search %>
+  <%= f.text_field :search %>
+
+  <%= f.submit "Submit"%>
+
+<% end %>
