@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.yelp.com/v2/search?location=San%20Francisco&term=Japanese%20curry
+    uri: http://api.yelp.com/v2/search?coordinates=no-lat,no-lng&location=San%20Francisco&term=Japanese%20curry
     body:
       encoding: US-ASCII
       string: ''
@@ -10,9 +10,9 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="80465d76f05f833504dfbe6dcf9f3e1b",
-        oauth_signature="eORxMH4VNztROgXtjuIGXkiOMRA%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1426798477", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
+      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="58bae584e093e8f901500490bdfd914a",
+        oauth_signature="juTEqCCPu1U8NywGeGM7iqdcQHU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426812777", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
         oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -24,17 +24,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 19 Mar 2015 20:54:38 GMT
+      - Fri, 20 Mar 2015 00:52:57 GMT
       Server:
       - Apache
       X-Node:
-      - web1-uswest1bprod, api_com
+      - web23-uswest1bprod, api_com
       Cache-Control:
       - private
       Set-Cookie:
-      - bse=11808b48a530fc882720ab1c15e7d225; Domain=.yelp.com; Path=/; HttpOnly
-      - yuv=G15QCgA-c1Ny0Z0ZwZf4ujBlUJl2PP-QhCZ873MSCHBjQp_W7f1hL_3dTDWkSDAyluqzUOeFaOLz8ulr8tjOnrce2qyVGziY;
-        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Wed, 14-Mar-2035 20:54:38
+      - bse=f8e286bc0243942ae18041d94f6307ae; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=xhk_Q7v8LSGUoCBN487zFy7JVCmI_jGSbV5KHJ8459qNUMxko4qxmhUl_oQOaxHKwzPUpfb0RQYeNyNcWvKBNLWjcWMYQqNt;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Thu, 15-Mar-2035 00:52:57
         GMT
       Content-Length:
       - '30670'
@@ -45,7 +45,7 @@ http_interactions:
       X-Mode:
       - ro
       X-Proxied:
-      - extlb2-uswest1aprod
+      - extlb1-uswest1aprod
     body:
       encoding: UTF-8
       string: '{"region": {"span": {"latitude_delta": 0.18159086000000002, "longitude_delta":
@@ -233,7 +233,7 @@ http_interactions:
         "longitude": -122.4979477}, "state_code": "CA"}}, {"is_claimed": true, "rating":
         3.5, "mobile_url": "http://m.yelp.com/biz/ken-ken-ramen-san-francisco-2",
         "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
-        "review_count": 461, "name": "Ken Ken Ramen", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/6NsMMM8AHN4NMR4cap9T-Q/ms.jpg",
+        "review_count": 463, "name": "Ken Ken Ramen", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/6NsMMM8AHN4NMR4cap9T-Q/ms.jpg",
         "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
         "url": "http://www.yelp.com/biz/ken-ken-ramen-san-francisco-2", "menu_date_updated":
         1401163788, "phone": "4159672636", "snippet_text": "Ken Ken is my go-to for
@@ -317,7 +317,7 @@ http_interactions:
         "longitude": -122.455533}, "state_code": "CA"}}, {"is_claimed": true, "rating":
         3.5, "mobile_url": "http://m.yelp.com/biz/katana-ya-san-francisco", "rating_img_url":
         "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
-        "review_count": 3236, "name": "Katana-Ya", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/P0pCS5BKBTnWngq0ljB86w/ms.jpg",
+        "review_count": 3237, "name": "Katana-Ya", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/P0pCS5BKBTnWngq0ljB86w/ms.jpg",
         "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
         "url": "http://www.yelp.com/biz/katana-ya-san-francisco", "phone": "4157711280",
         "snippet_text": "Oh man, ramen craving overly satisfied!!!! I loved the katana-ya
@@ -380,5 +380,5 @@ http_interactions:
         "US", "address": ["3226 Geary Blvd"], "coordinate": {"latitude": 37.781959000000001,
         "longitude": -122.45376899999999}, "state_code": "CA"}}]}'
     http_version: 
-  recorded_at: Thu, 19 Mar 2015 20:54:38 GMT
+  recorded_at: Fri, 20 Mar 2015 00:52:57 GMT
 recorded_with: VCR 2.9.3

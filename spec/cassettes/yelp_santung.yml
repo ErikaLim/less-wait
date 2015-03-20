@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.yelp.com/v2/search?location=San%20Francisco&term=San%20Tung%20Chinese
+    uri: http://api.yelp.com/v2/search?coordinates=no-lat,no-lng&location=San%20Francisco&term=San%20Tung%20Chinese
     body:
       encoding: US-ASCII
       string: ''
@@ -10,9 +10,9 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="fa39bc054df6a37c6882d9c1cf819f4f",
-        oauth_signature="bw2H%2F%2Bk0zq04PIezXuNifLPS1PI%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1426798477", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
+      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="5ead9ca903d962809a38c2ae83275adb",
+        oauth_signature="1sufj5kbPW76or3xxTb7WDQcMLI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426812776", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
         oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -24,20 +24,20 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 19 Mar 2015 20:54:38 GMT
+      - Fri, 20 Mar 2015 00:52:56 GMT
       Server:
       - Apache
       X-Node:
-      - web19-uswest1aprod, api_com
+      - web12-uswest1bprod, api_com
       Cache-Control:
       - private
       Set-Cookie:
-      - bse=19335b91b18005b866b2793dfbf1232a; Domain=.yelp.com; Path=/; HttpOnly
-      - yuv=PXsdh5pUAIJUzFTS1aTv1xfZyjrV2zwf6SXjznp664TT8A8fW0my78mjeQOU32-NKBQMDI7ipZ6tscxmsFkvcCsiLbr9HS6R;
-        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Wed, 14-Mar-2035 20:54:38
+      - bse=b3e8f202e4f8af1a8b32bf0484c03e1e; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=lYjbrcLT4S9NNH5BUw_aEeStuLDtSyH4BawRZgTYOv9PTemmhZwBXIYhYuSnBjcDRfgKJ_rfPwNoRpgdyQovoaiPdRYOhCxP;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Thu, 15-Mar-2035 00:52:56
         GMT
       Content-Length:
-      - '31298'
+      - '31296'
       Vary:
       - User-Agent
       Content-Type:
@@ -45,7 +45,7 @@ http_interactions:
       X-Mode:
       - ro
       X-Proxied:
-      - extlb1-uswest1aprod
+      - extlb2-uswest1aprod
     body:
       encoding: UTF-8
       string: '{"region": {"span": {"latitude_delta": 0.055419430000000602, "longitude_delta":
@@ -70,12 +70,12 @@ http_interactions:
         Irving St"], "coordinate": {"latitude": 37.763671899999999, "longitude": -122.4689636},
         "state_code": "CA"}}, {"is_claimed": false, "rating": 3.5, "mobile_url": "http://m.yelp.com/biz/san-tung-2-san-francisco",
         "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
-        "review_count": 114, "name": "San Tung #2", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/TQrczhqqMJd5yOitI_Iixw/ms.jpg",
+        "review_count": 114, "name": "San Tung #2", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/W8RpC9KMoGj7BJjaqoeU2Q/ms.jpg",
         "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
         "url": "http://www.yelp.com/biz/san-tung-2-san-francisco", "phone": "4152420828",
-        "snippet_text": "My friends and I are documenting the differences between
-        San Tung and San Tung #2 as we are eating their delicious diced and whole
-        chicken wings.\n\nSan Tung...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/_7JC__cCNRdtlmEKAER1Mw/ms.jpg",
+        "snippet_text": "We came intending to go to San Tung for the famous dry fried
+        chicken wings and ended up coming to San Tung #2 since there was a line at
+        San Tung and #2 was...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/_7JC__cCNRdtlmEKAER1Mw/ms.jpg",
         "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-242-0828",
         "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
         "id": "san-tung-2-san-francisco", "is_closed": false, "location": {"cross_streets":
@@ -342,7 +342,7 @@ http_interactions:
         "url": "http://www.yelp.com/biz/heung-yuen-restaurant-san-francisco", "phone":
         "4156482666", "snippet_text": "THE BEST OF THE BEST \nI loveeeeeeeeeeeeeeeee
         this place :)\nMy fav dish: Korean chicken (Obviously), and Chow Mein !!\nKorean
-        Chicken is MUST ! \n+ They...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/up6rsxI03cM1SIpiPh0cbA/ms.jpg",
+        Chicken is MUST ! \n+ They...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/GBtUS4Ls1Ti4NqNVQWac-A/ms.jpg",
         "categories": [["Chinese", "chinese"]], "display_phone": "+1-415-648-2666",
         "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
         "id": "heung-yuen-restaurant-san-francisco", "is_closed": false, "location":
@@ -385,5 +385,5 @@ http_interactions:
         ["1307 Sutter St"], "coordinate": {"latitude": 37.787456810474403, "longitude":
         -122.42207787931}, "state_code": "CA"}}]}'
     http_version: 
-  recorded_at: Thu, 19 Mar 2015 20:54:37 GMT
+  recorded_at: Fri, 20 Mar 2015 00:52:57 GMT
 recorded_with: VCR 2.9.3

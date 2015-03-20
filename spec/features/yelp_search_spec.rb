@@ -41,12 +41,12 @@ feature Yelp do
   end
 
   feature "Location" do
-    scenario "distance from current location" do
+    scenario "User can see the location (address) of the restaurants" do
       VCR.use_cassette('yelp santung') do
         visit root_path
         fill_in 'search', with: "San Tung Chinese"
         click_on 'Submit'
-        save_and_open_page
+
         expect(page).to have_content("1031 Irving St, San Francisco, CA 94122")
       end
     end

@@ -23,9 +23,12 @@
     <th>
       Address
     </th>
+    <th>
+
+    </th>
   </thead>
   <tbody>
-  <% @businesses.each do |business| %>
+  <% @businesses.each_with_index do |business, i| %>
     <tr>
       <td>
         <%= business.name %>
@@ -45,6 +48,10 @@
       <td>
         <% address = business.location.display_address %>
         <%= address.first %>, <%= address.last %>
+      </td>
+      <td>
+        <%= business.location.coordinate.latitude %>
+        <%= business.location.coordinate.longitude %>
       </td>
     </tr>
   <% end %>
