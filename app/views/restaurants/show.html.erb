@@ -5,55 +5,22 @@
 <br>
 
 
+<% @businesses.each do |business| %>
 
-<table>
-  <thead>
-    <th>
-      Name
-    </th>
-    <th>
-      Tags
-    </th>
-    <th>
-      Reviews
-    </th>
-    <th>
-      Rating
-    </th>
-    <th>
-      Address
-    </th>
-    <th>
+  <div class="ui list">
+    <div class="item">
+      <img class="ui image" src="<%= business[:image_url] %>"/>
+      <div class="content">
+        <a class="header" href=<%= business[:url] %>><%= business[:name] %></a>
+        <div class="description">
+          <li><img src="<%= business[:star_rating]%>" alt="<%= business[:rating] %>"/></li>
+          <li><b> <%= business[:review_count] %> Reviews</b> </li>
+          <li><%= business[:address] %></li>
+          <li><%= business[:categories] %></li>
+        </div>
+      </div>
 
-    </th>
-  </thead>
-  <tbody>
-  <% @businesses.each_with_index do |business, i| %>
-    <tr>
-      <td>
-        <%= business.name %>
-      </td>
-      <td>
-        <% business.categories.each do |cat_capital, cat_downcase| %>
-          <%= cat_capital %>
-        <% end %>
+    </div>
+  </div>
 
-      </td>
-      <td>
-        <%= business.review_count %> reviews
-      </td>
-      <td>
-        <img src=" <%= business.rating_img_url %> " alt="<%= business.rating %> Stars" />
-      </td>
-      <td>
-        <% address = business.location.display_address %>
-        <%= address.first %>, <%= address.last %>
-      </td>
-      <td>
-        <%= business.location.coordinate.latitude %>
-        <%= business.location.coordinate.longitude %>
-      </td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+<% end %>

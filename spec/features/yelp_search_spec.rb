@@ -12,6 +12,20 @@ feature Yelp do
     end
   end
 
+  pending scenario "user can click on restaurant name which will bring them to the business page on yelp" do
+    VCR.use_cassette('yelp pizza') do
+      visit root_path
+      fill_in('search', :with => "pizza")
+      click_button('Submit')
+
+      expect(page).to have_content("Little Star Pizza")
+      # save_and_open_page
+      click_on("Little Star Pizza")
+      find("yelp.com/biz/little-star-pizza-san-francisco")
+      # expect(current_url).to be("yelp.com/biz/little-star-pizza-san-francisco")
+    end
+  end
+
   scenario "user can search yelp by category" do
     VCR.use_cassette('yelp japanesecurry') do
       visit root_path
@@ -27,7 +41,7 @@ feature Yelp do
       visit root_path
       fill_in('search', :with => "San Tung Chinese")
       click_button('Submit')
-      expect(page).to have_content("4392 reviews")
+      expect(page).to have_content("4392 Reviews")
     end
   end
 

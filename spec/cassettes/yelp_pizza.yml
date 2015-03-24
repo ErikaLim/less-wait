@@ -1,0 +1,393 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.yelp.com/v2/search?coordinates=no-lat,no-lng&location=San%20Francisco&term=pizza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - OAuth oauth_consumer_key="6l1DzKYyKGIy0eetr2iUEg", oauth_nonce="46c42cc5878e3cb48fe65a284d44688c",
+        oauth_signature="%2Baj%2BQpS5AXxrgZNjaMDRnyprAW8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426817315", oauth_token="El3E4qtoOkX6l_DLD8l40Vr3hUZlNAWe",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 02:08:35 GMT
+      Server:
+      - Apache
+      X-Node:
+      - web102-r10-sfo2, api_com
+      Cache-Control:
+      - private
+      Set-Cookie:
+      - bse=f4961fe8507703c68fbebd5d69159d34; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=cmhlhwXUaac9hYLske7A1qh0rZVGNcR8qLC0Mu2IE0rK_7rCx7k4WB68wDs_nwZuLqnICrhfKJheJeXBLgJyYx8x0GcaLZlv;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Thu, 15-Mar-2035 02:08:35
+        GMT
+      Content-Length:
+      - '31264'
+      Vary:
+      - User-Agent
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Mode:
+      - ro
+      X-Proxied:
+      - extlb2-r5-sfo2
+    body:
+      encoding: UTF-8
+      string: '{"region": {"span": {"latitude_delta": 0.080920166856429887, "longitude_delta":
+        0.10417505999998866}, "center": {"latitude": 37.770815135893649, "longitude":
+        -122.4355288}}, "total": 3668, "businesses": [{"is_claimed": true, "rating":
+        4.0, "mobile_url": "http://m.yelp.com/biz/tonys-pizza-napoletana-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 2474, "name": "Tony''s Pizza Napoletana", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/Q3-Qai2Ms_VJO_4oNxBnlg/ms.jpg", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/tonys-pizza-napoletana-san-francisco", "menu_date_updated":
+        1387664062, "phone": "4158359888", "snippet_text": "Best pizzas I''ve had
+        in San Fran so far - service is OK - prices are OK \n\nIt is very busy and
+        loud though :)", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/KmNcTQaM58lgkxBrSW6Wiw/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone":
+        "+1-415-835-9888", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "tonys-pizza-napoletana-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Union St", "city": "San
+        Francisco", "display_address": ["1570 Stockton St", "North Beach/Telegraph
+        Hill", "San Francisco, CA 94133"], "geo_accuracy": 8.0, "neighborhoods": ["North
+        Beach/Telegraph Hill"], "postal_code": "94133", "country_code": "US", "address":
+        ["1570 Stockton St"], "coordinate": {"latitude": 37.800319700000003, "longitude":
+        -122.4089432}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/little-star-pizza-san-francisco", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 2375, "name": "Little Star Pizza", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/uxMlIl5b98tUTvIZM8vRDw/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/little-star-pizza-san-francisco", "menu_date_updated":
+        1415392432, "phone": "4154411118", "snippet_text": "Ok, I''m from the Philly
+        area, so we don''t do deep dish. But this pizza was pretty good. I was dining
+        with some culinary wusses, so we had a plain cheese...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/OdMRQ5SuXajPveg0sMaZGQ/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-441-1118", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "little-star-pizza-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Fulton St \u0026 Mcallister
+        St", "city": "San Francisco", "display_address": ["846 Divisadero St", "NoPa",
+        "San Francisco, CA 94117"], "geo_accuracy": 8.0, "neighborhoods": ["NoPa",
+        "Alamo Square"], "postal_code": "94117", "country_code": "US", "address":
+        ["846 Divisadero St"], "coordinate": {"latitude": 37.777538, "longitude":
+        -122.437988}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/long-bridge-pizza-company-san-francisco", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 136, "name": "Long Bridge Pizza Company", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/4d31u6n6EBzRhTEGHnLK5w/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/long-bridge-pizza-company-san-francisco",
+        "menu_date_updated": 1401955500, "phone": "4158298999", "snippet_text": "I
+        never order pizza in the city, and I have never been to/heard of the Dogpatch
+        area of San Francisco...that is, until I visited a friend who used to work...",
+        "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/meyPcO2b6VY-WKCT854rBg/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-829-8999", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "long-bridge-pizza-company-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "22nd St \u0026 20th St",
+        "city": "San Francisco", "display_address": ["2347 3rd St", "Dogpatch", "San
+        Francisco, CA 94107"], "geo_accuracy": 9.5, "neighborhoods": ["Dogpatch",
+        "Potrero Hill"], "postal_code": "94107", "country_code": "US", "address":
+        ["2347 3rd St"], "coordinate": {"latitude": 37.759519900000001, "longitude":
+        -122.3881765}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url":
+        "http://m.yelp.com/biz/golden-boy-pizza-san-francisco", "rating_img_url":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1825, "name": "Golden Boy Pizza", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/TlDCbyLtF36Fe9-bhzT3Nw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/golden-boy-pizza-san-francisco", "menu_date_updated":
+        1387619541, "phone": "4159829738", "snippet_text": "Hot, Cheesy and Always
+        Tasty\n\nNot a place to sit down..more of a grab and go!", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/yPTMOS9a9ilaKh1hlSeh-g/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone":
+        "+1-415-982-9738", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "golden-boy-pizza-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Jasper Pl \u0026 Bannam
+        Pl", "city": "San Francisco", "display_address": ["542 Green St", "North Beach/Telegraph
+        Hill", "San Francisco, CA 94133"], "geo_accuracy": 9.5, "neighborhoods": ["North
+        Beach/Telegraph Hill"], "postal_code": "94133", "country_code": "US", "address":
+        ["542 Green St"], "coordinate": {"latitude": 37.799795600000003, "longitude":
+        -122.40807289999999}, "state_code": "CA"}}, {"is_claimed": true, "rating":
+        4.5, "mobile_url": "http://m.yelp.com/biz/carmel-pizza-company-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 306, "name": "Carmel Pizza Company", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/m9OBN8HIFL9PqpJVQLNLKQ/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/carmel-pizza-company-san-francisco", "menu_date_updated":
+        1402624633, "phone": "4156761185", "snippet_text": "Well a year later and
+        I''m back in San Francisco and my first lunch stop was Carmel Pizza and I''m
+        glad it was. Just yummy. Light flavorful crust, fresh...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/a_JuaKLIuJKpaAdzlQXONg/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone":
+        "+1-415-676-1185", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "eat24", "id": "carmel-pizza-company-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Jefferson St \u0026 Beach St", "city":
+        "San Francisco", "display_address": ["2826 Jones St", "North Beach/Telegraph
+        Hill", "San Francisco, CA 94133"], "geo_accuracy": 9.5, "neighborhoods": ["North
+        Beach/Telegraph Hill", "Fisherman''s Wharf"], "postal_code": "94133", "country_code":
+        "US", "address": ["2826 Jones St"], "coordinate": {"latitude": 37.8075970299193,
+        "longitude": -122.417328357697}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/zero-zero-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 2222, "name": "Zero Zero", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/unedkoanneM7AYuSTmuaUQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/zero-zero-san-francisco", "menu_date_updated":
+        1417426574, "phone": "4153488800", "snippet_text": "Zero Zero is known for
+        their pizza to be sure, but personally I would skip all those and head straight
+        for the pasta menu. I''m a little picky about my pizza...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/QuFTAeljLSj-8pN1zHYjbQ/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"], ["Lounges", "lounges"]],
+        "display_phone": "+1-415-348-8800", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "zero-zero-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "5th St \u0026 4th St", "city": "San
+        Francisco", "display_address": ["826 Folsom St", "SoMa", "San Francisco, CA
+        94107"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"], "postal_code": "94107",
+        "country_code": "US", "address": ["826 Folsom St"], "coordinate": {"latitude":
+        37.781635000000001, "longitude": -122.402046}, "state_code": "CA"}}, {"is_claimed":
+        true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/pizzeria-delfina-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1930, "name": "Pizzeria Delfina", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/ufNDY_7ll12twwrn1_ZR1g/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/pizzeria-delfina-san-francisco", "menu_date_updated":
+        1387609359, "phone": "4154376800", "snippet_text": "Consistently what I tell
+        others is my most favourite pizza place in San Francisco.  \nThe location,
+        is optimal.  Right around the corner from Dolores Park...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/FQpcnnjTWLWCFU81wD0aaQ/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone":
+        "+1-415-437-6800", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "pizzeria-delfina-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Guerrero St \u0026 Oakwood
+        St", "city": "San Francisco", "display_address": ["3611 18th St", "Mission",
+        "San Francisco, CA 94110"], "geo_accuracy": 8.0, "neighborhoods": ["Mission"],
+        "postal_code": "94110", "country_code": "US", "address": ["3611 18th St"],
+        "coordinate": {"latitude": 37.761360199999999, "longitude": -122.4241791},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/baonecci-ristorante-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 676, "name": "Baonecci Ristorante", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/WsGh71Hvx3v7Ko2sWTrTmw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/baonecci-ristorante-san-francisco", "menu_date_updated":
+        1426121106, "phone": "4159891806", "snippet_text": "i live in north beach
+        and i cant believe i didnt know about this place sooner. i do not liberally
+        give out 5 stars so i really mean this rating. definitely...", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/dWyGAdS-8E4tNb_ynTfQ-w/ms.jpg", "categories":
+        [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone": "+1-415-989-1806",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "locu", "id": "baonecci-ristorante-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Bannam Pl \u0026 Grant Ave", "city":
+        "San Francisco", "display_address": ["516 Green St", "North Beach/Telegraph
+        Hill", "San Francisco, CA 94133"], "geo_accuracy": 8.0, "neighborhoods": ["North
+        Beach/Telegraph Hill"], "postal_code": "94133", "country_code": "US", "address":
+        ["516 Green St"], "coordinate": {"latitude": 37.799824000000001, "longitude":
+        -122.407837}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/all-good-pizza-san-francisco", "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 108, "name": "All Good Pizza", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/vczXaA7Go4YOVCm9ZVfEGw/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/all-good-pizza-san-francisco", "phone": "4159339384",
+        "snippet_text": "I stopped by All Good Pizza\u200b in south san francisco  before
+        a meeting today. I love this place. Cool, funky and full of soul. Great place
+        to soak up south...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/xMwVf8glzvtwbemKrJsCYg/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Sandwiches", "sandwiches"], ["Salad",
+        "salad"]], "display_phone": "+1-415-933-9384", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "all-good-pizza-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Newhall St \u0026 Phelps St", "city": "San Francisco", "display_address":
+        ["1605 Jerrold Ave", "Bayview-Hunters Point", "San Francisco, CA 94124"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Bayview-Hunters Point"], "postal_code":
+        "94124", "country_code": "US", "address": ["1605 Jerrold Ave"], "coordinate":
+        {"latitude": 37.739044499999999, "longitude": -122.3897508}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/the-pizza-shop-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 114, "name": "The Pizza Shop", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/7JmyxnxgOkCAatNrEJp_nQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/the-pizza-shop-san-francisco", "phone": "4158241840",
+        "snippet_text": "We needed a good slice shop in this neighborhood and this
+        is it. The owners and the people who work there are genuinely friendly and
+        the pizza good ny...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/KtqTKdaYaDUU4zLbPzHm0w/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-824-1840", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "the-pizza-shop-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Folsom St \u0026 Shotwell St", "city": "San Francisco", "display_address":
+        ["3104 24th St", "Mission", "San Francisco, CA 94110"], "geo_accuracy": 9.5,
+        "neighborhoods": ["Mission"], "postal_code": "94110", "country_code": "US",
+        "address": ["3104 24th St"], "coordinate": {"latitude": 37.752591857906097,
+        "longitude": -122.41455420986}, "state_code": "CA"}}, {"is_claimed": false,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/gialina-pizzeria-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 932, "name": "Gialina Pizzeria", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/0tbaFMevqxurmi_b2HZGWA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/gialina-pizzeria-san-francisco", "menu_date_updated":
+        1387631554, "phone": "4152398500", "snippet_text": "Sunchokes, when they have
+        it, is one of the best pizzas I''ve ever had. Top 3. Ever.\n\nWe usually order
+        out because there''s very little room and I''ve never...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/m3WbO7MiQTqLkemYKVJMmw/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone":
+        "+1-415-239-8500", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "gialina-pizzeria-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Kern St \u0026 Wilder St",
+        "city": "San Francisco", "display_address": ["2842 Diamond St", "Glen Park",
+        "San Francisco, CA 94131"], "geo_accuracy": 8.0, "neighborhoods": ["Glen Park"],
+        "postal_code": "94131", "country_code": "US", "address": ["2842 Diamond St"],
+        "coordinate": {"latitude": 37.734033241867998, "longitude": -122.434055283666},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/marcellos-pizza-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 539, "name": "Marcello''s Pizza", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/Ur0MIc0Sr-xlhiF7IXdm3w/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/marcellos-pizza-san-francisco", "phone": "4158633900",
+        "snippet_text": "This place was DELICIOUS! I had a pepperoni mushroom slice
+        and it was DELICIOUS!! Oh wait, did I already say that? I''m from NY and this
+        was no NY pizza but...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/Ra-LoF5w8FQR7O_zh60uEg/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-863-3900", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "marcellos-pizza-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "18th St \u0026 17th St", "city": "San Francisco", "display_address": ["420
+        Castro St", "Castro", "San Francisco, CA 94114"], "geo_accuracy": 8.0, "neighborhoods":
+        ["Castro"], "postal_code": "94114", "country_code": "US", "address": ["420
+        Castro St"], "coordinate": {"latitude": 37.762050600000002, "longitude": -122.435379},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/pizzeria-delfina-san-francisco-3",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1128, "name": "Pizzeria Delfina", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/oq1CZT4PneemN0bwLATU8w/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/pizzeria-delfina-san-francisco-3", "menu_date_updated":
+        1387643117, "phone": "4154401189", "snippet_text": "I found the Fillmore location
+        of Pizzeria Delfina to be as good as the location in the Mission but with
+        shorter wait times.\n\nThe saffron arancini ($7) were...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/zdXdoNfMdyE7TtJ4vwYs6w/ms.jpg",
+        "categories": [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone":
+        "+1-415-440-1189", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "pizzeria-delfina-san-francisco-3",
+        "is_closed": false, "location": {"cross_streets": "Fillmore St \u0026 Steiner
+        St", "city": "San Francisco", "display_address": ["2406 California St", "Pacific
+        Heights", "San Francisco, CA 94115"], "geo_accuracy": 9.5, "neighborhoods":
+        ["Pacific Heights"], "postal_code": "94115", "country_code": "US", "address":
+        ["2406 California St"], "coordinate": {"latitude": 37.789002199999999, "longitude":
+        -122.4343326}, "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/pizzetta-211-san-francisco", "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 915, "name": "Pizzetta 211", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/aG_sfJmV4aQYOcTbIPAjiQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/pizzetta-211-san-francisco", "phone": "4153799880",
+        "snippet_text": "There are rare occasions that I prefer a thin pizza and this
+        is one of them!\nList of things that bring me here over and over: \n1) Have
+        you been to...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/oW-W8ACEYK-cCxTOakL0VA/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-379-9880", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "pizzetta-211-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "California St \u0026 Clement St", "city": "San Francisco", "display_address":
+        ["211 23rd Ave", "Outer Richmond", "San Francisco, CA 94121"], "geo_accuracy":
+        8.0, "neighborhoods": ["Outer Richmond"], "postal_code": "94121", "country_code":
+        "US", "address": ["211 23rd Ave"], "coordinate": {"latitude": 37.783627957105601,
+        "longitude": -122.482908368111}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/patxis-pizza-san-francisco-2",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1630, "name": "Patxi''s Pizza", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/rddztqqnJU0BnlFvBk8c2g/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/patxis-pizza-san-francisco-2", "menu_date_updated":
+        1423683381, "phone": "4155589991", "snippet_text": "Gluten-free pizza dough
+        here is pretty good here, better than most. \n\nHappy hour prices are pretty
+        good here, better than most. (I actually don''t know if it...", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/FUHYQybGlPqDdItk3PetOg/ms.jpg", "categories":
+        [["Pizza", "pizza"]], "display_phone": "+1-415-558-9991", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "eat24", "id": "patxis-pizza-san-francisco-2", "is_closed":
+        false, "location": {"cross_streets": "Octavia St \u0026 Laguna St", "city":
+        "San Francisco", "display_address": ["511 Hayes St", "Hayes Valley", "San
+        Francisco, CA 94102"], "geo_accuracy": 8.0, "neighborhoods": ["Hayes Valley"],
+        "postal_code": "94102", "country_code": "US", "address": ["511 Hayes St"],
+        "coordinate": {"latitude": 37.776432, "longitude": -122.425003}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/il-casaro-pizzeria-and-mozzarella-bar-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 167, "name": "IL Casaro Pizzeria \u0026 Mozzarella Bar", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/oII2a2avcIPosUQaLW10vA/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/il-casaro-pizzeria-and-mozzarella-bar-san-francisco",
+        "menu_date_updated": 1401179422, "phone": "4156779455", "snippet_text": "Early
+        Friday night dinner and we searched Yelp for a good Pizza around North Beach
+        and up came Il Casaro.  We got there early so there was no wait.  We...",
+        "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/rAXwcyAaGe-jbxhaBJoHQw/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-677-9455", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "il-casaro-pizzeria-and-mozzarella-bar-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Vallejo St \u0026 Grant
+        Ave", "city": "San Francisco", "display_address": ["348 Columbus Ave", "Russian
+        Hill", "San Francisco, CA 94133"], "geo_accuracy": 9.5, "neighborhoods": ["Russian
+        Hill", "North Beach/Telegraph Hill"], "postal_code": "94133", "country_code":
+        "US", "address": ["348 Columbus Ave"], "coordinate": {"latitude": 37.7984832,
+        "longitude": -122.40739809999999}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/escape-from-new-york-pizza-san-francisco-3",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 864, "name": "Escape From New York Pizza", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/ZtsnT3GQcMzBJgMrBBVA5w/ms.jpg", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/escape-from-new-york-pizza-san-francisco-3",
+        "menu_date_updated": 1407410796, "phone": "4156685577", "snippet_text": "Great
+        for a late night bite!\n\nEscape''s pizza is so unique that I can tell it''s
+        from here even if I was blindfolded. The crust is thin and has a consistency...",
+        "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/ZHziQtdBkRuuV3zncw63Ng/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-668-5577", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "escape-from-new-york-pizza-san-francisco-3",
+        "is_closed": false, "location": {"cross_streets": "Cole St \u0026 Shrader
+        St", "city": "San Francisco", "display_address": ["1737 Haight St", "The Haight",
+        "San Francisco, CA 94117"], "geo_accuracy": 9.5, "neighborhoods": ["The Haight"],
+        "postal_code": "94117", "country_code": "US", "address": ["1737 Haight St"],
+        "coordinate": {"latitude": 37.769445599999997, "longitude": -122.45127220000001},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/goat-hill-pizza-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1015, "name": "Goat Hill Pizza", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/X3_HqCw6Pqt_orB1jpznLg/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/goat-hill-pizza-san-francisco", "phone": "4156411440",
+        "snippet_text": "I thought the pizza pan had it out for me. \n\nTurns out
+        it was my brother taking too many slices off one side, sending the pie careening
+        from the table rack...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/K9Pvl_e7--ZTrD7p49MSfw/ms.jpg",
+        "categories": [["Pizza", "pizza"]], "display_phone": "+1-415-641-1440", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "goat-hill-pizza-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "18th St \u0026 19th St", "city": "San Francisco", "display_address": ["300
+        Connecticut St", "Potrero Hill", "San Francisco, CA 94107"], "geo_accuracy":
+        9.5, "neighborhoods": ["Potrero Hill"], "postal_code": "94107", "country_code":
+        "US", "address": ["300 Connecticut St"], "coordinate": {"latitude": 37.762470999999998,
+        "longitude": -122.39765800000001}, "state_code": "CA"}}, {"is_claimed": false,
+        "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/arinell-pizza-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 915, "name": "Arinell Pizza", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/KLXQdSCmEBZTy9dS4iPiWQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/arinell-pizza-san-francisco", "menu_date_updated":
+        1387610972, "phone": "4152551303", "snippet_text": "I am from NY. So weight
+        my pizza review accordlingly please.\n\nBEST pizza in SF if you like thin
+        NY style crispy crust pizza.\n\nThe staff is authentic hole in...", "image_url":
+        "http://s3-media4.fl.yelpcdn.com/bphoto/gnuLo2abDhUHS1pxkCUuoQ/ms.jpg", "categories":
+        [["Pizza", "pizza"]], "display_phone": "+1-415-255-1303", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "arinell-pizza-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "17th St \u0026 16th St", "city": "San
+        Francisco", "display_address": ["509 Valencia St", "Mission", "San Francisco,
+        CA 94110"], "geo_accuracy": 8.0, "neighborhoods": ["Mission"], "postal_code":
+        "94110", "country_code": "US", "address": ["509 Valencia St"], "coordinate":
+        {"latitude": 37.764667421579396, "longitude": -122.42181032896001}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/giorgios-pizzeria-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 709, "name": "Giorgio''s Pizzeria", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/n0wrItUnJaBvQdLY3Zr1fw/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/giorgios-pizzeria-san-francisco", "menu_date_updated":
+        1425897725, "phone": "4156681266", "snippet_text": "Aside from Gaspare''s
+        pizza which is my ultimate fave, I absolutely love Giorgios. \n\nMy boyfriend
+        and I usually order for our dinner take-out and the only...", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/brKbLuc3ZkfUdpnU68oPcw/ms.jpg", "categories":
+        [["Pizza", "pizza"], ["Italian", "italian"]], "display_phone": "+1-415-668-1266",
+        "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "giorgios-pizzeria-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "3rd Ave \u0026 2nd Ave",
+        "city": "San Francisco", "display_address": ["151 Clement St", "Inner Richmond",
+        "San Francisco, CA 94118"], "geo_accuracy": 9.5, "neighborhoods": ["Inner
+        Richmond"], "postal_code": "94118", "country_code": "US", "address": ["151
+        Clement St"], "coordinate": {"latitude": 37.7829999120287, "longitude": -122.461083021665},
+        "state_code": "CA"}}]}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 02:08:36 GMT
+recorded_with: VCR 2.9.3
