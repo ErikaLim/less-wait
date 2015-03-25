@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'yelp', require: 'yelp'
+gem 'google_places'
 
 gem 'dotenv-rails'
 

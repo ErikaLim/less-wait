@@ -15,7 +15,8 @@ class RestaurantsController < ApplicationController
         categories: business.categories,
         star_rating: business.rating_img_url,
         rating: business.rating,
-        address: "#{business.location.display_address.first }, #{business.location.display_address.last}"
+        address: "#{business.location.display_address.first }, #{business.location.display_address.last}",
+        phone: business.display_phone
       }
     end
 
