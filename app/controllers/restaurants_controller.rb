@@ -16,10 +16,19 @@ class RestaurantsController < ApplicationController
         star_rating: business.rating_img_url,
         rating: business.rating,
         address: "#{business.location.display_address.first }, #{business.location.display_address.last}",
-        phone: business.display_phone
+        phone: display_phone(business.display_phone)
       }
     end
 
     render restaurant_path
+
+  end
+
+  private
+
+  def display_phone(phone_number)
+    parts = phone_number.split('-')
+
+    "(#{parts[1]}) #{parts[2]}-#{parts[3]}"
   end
 end
