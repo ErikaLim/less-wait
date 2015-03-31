@@ -29,7 +29,7 @@ gem 'spring',        group: :development
 gem 'yelp', require: 'yelp'
 gem 'google_places'
 
-gem 'geocoder'
+
 
 gem 'rack-cors', '~> 0.3.1'
 
