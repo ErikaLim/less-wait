@@ -5,4 +5,5 @@ class WaitTimesController < ApplicationController
     restaurant.wait_times.create(time:params[:wait_time])
     render nothing: true, status: 200
   end
+  
 end

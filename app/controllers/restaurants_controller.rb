@@ -13,15 +13,23 @@ class RestaurantsController < ApplicationController
     businesses = response.businesses.map do |business|
 
       db_restaurant = Restaurant.find_by(yelp_id:business.id)
-      last_wait_time = db_restaurant ? db_restaurant.wait_times.last : nil
-      # dont include in hash if wait time is older than 1hr (or something)
+
+      if db_restaurant && db_restaurant.wait_times.last.created_at < 2.hour.ago
+        last_wait_time = db_restaurant.wait_times.last
+        wait_time = {
+          time: last_wait_time.time,
+          created_at: last_wait_time.created_at,
+        }
+      else
+        wait_time = nil
+      end
 
       categories = business.categories.map do |category_arr|
         category_arr.first
       end
 
       {
-        wait_time: last_wait_time,
+        wait_time: wait_time,
         id: business.id,
         name: business.name,
         url: business.url,
