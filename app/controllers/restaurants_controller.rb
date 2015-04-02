@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
 
       db_restaurant = Restaurant.find_by(yelp_id:business.id)
 
-      if db_restaurant && db_restaurant.wait_times.last.created_at < 2.hour.ago
+      if db_restaurant && db_restaurant.wait_times.last.created_at > 2.hour.ago
         last_wait_time = db_restaurant.wait_times.last
         wait_time = {
           time: last_wait_time.time,
@@ -33,7 +33,6 @@ class RestaurantsController < ApplicationController
         id: business.id,
         name: business.name,
         url: business.url,
-        # image_url: business.image_url,
         review_count: business.review_count,
         categories: categories,
         star_rating: business.rating_img_url,
