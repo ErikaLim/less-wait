@@ -38,7 +38,7 @@ class RestaurantsController < ApplicationController
         star_rating: business.rating_img_url,
         rating: business.rating,
         address: "#{business.location.display_address.first }, #{business.location.display_address.last}",
-        phone: display_phone(business.display_phone),
+        phone: display_phone(business),
         geocoords: [business.location.coordinate.longitude, business.location.coordinate.latitude],
       }
     end
@@ -48,9 +48,14 @@ class RestaurantsController < ApplicationController
 
   private
 
-  def display_phone(phone_number)
-    parts = phone_number.split('-')
+  def display_phone(biz)
+    begin
+      phone_number = biz.display_phone 
+      parts = phone_number.split('-')
 
-    "(#{parts[1]}) #{parts[2]}-#{parts[3]}"
+      "(#{parts[1]}) #{parts[2]}-#{parts[3]}"
+    rescue
+      "Unavailable"
+    end
   end
 end
