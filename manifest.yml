@@ -1,0 +1,10 @@
+---
+ applications:
+ - name: lessWait-staging
+   memory: 512M
+   instances: 1
+   host: lessWait-staging
+   domain: mybluemix.net
+   path: .
+   services:
+   - lessWait-staging-db
